@@ -1,0 +1,12 @@
+{
+    "name": "Akshatha Sathish",
+    "short_name": "Aksha",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#1c010f",
+    "theme_color": "#1c010f",
+    "description": "Portfolio",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": []
+}
