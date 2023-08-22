@@ -64,8 +64,7 @@ class Portfolio extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: OutlinedButton.icon(
                       onPressed: () async {
-                        final Uri url =
-                            Uri.parse('https://github.com/micedreams');
+                        final Uri url = Uri.parse('https://github.com/micedreams');
 
                         await launchUrl(url);
                       },
@@ -80,8 +79,7 @@ class Portfolio extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     child: OutlinedButton.icon(
                       onPressed: () async {
-                        final Uri url =
-                            Uri.parse('https://micedreams.github.io/CV/');
+                        final Uri url = Uri.parse('https://micedreams.github.io/CV/');
 
                         await launchUrl(url);
                       },
@@ -102,8 +100,7 @@ class Portfolio extends StatelessWidget {
                 child: OutlinedButton.icon(
                   onPressed: () async {
                     String email = Uri.encodeComponent("micedreams@gmail.com");
-                    Uri mail =
-                        Uri.parse("mailto:$email?subject= Hi &body= Hi,");
+                    Uri mail = Uri.parse("mailto:$email?subject= Hi &body= Hi,");
 
                     await launchUrl(mail);
                   },
