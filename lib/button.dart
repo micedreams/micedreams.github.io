@@ -19,8 +19,8 @@ class Button extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: OutlinedButton.icon(
-        onPressed: () async {
+      child: InkWell(
+        onTap: () async {
           final Uri url = Uri.parse(link);
 
           await launchUrl(url);
@@ -32,7 +32,7 @@ class Button extends StatelessWidget {
             height: 30,
           ),
         ),
-        label: Text(name),
+        
       ),
     );
   }
