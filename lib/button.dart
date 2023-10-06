@@ -4,14 +4,11 @@ import 'package:url_launcher/url_launcher.dart';
 
 class Button extends StatelessWidget {
   final String link;
-
-  final String name;
   final String icon;
 
   const Button({
     super.key,
     required this.link,
-    required this.name,
     required this.icon,
   });
 
@@ -19,20 +16,16 @@ class Button extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: InkWell(
-        onTap: () async {
+      child: IconButton(
+        onPressed: () async {
           final Uri url = Uri.parse(link);
 
           await launchUrl(url);
         },
-        icon: Padding(
-          padding: const EdgeInsets.all(2.0),
-          child: SvgPicture.string(
-            icon,
-            height: 30,
-          ),
+        icon: SvgPicture.string(
+          icon,
+          height: 30,
         ),
-        
       ),
     );
   }
