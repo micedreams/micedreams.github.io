@@ -28,7 +28,7 @@ class Portfolio extends StatelessWidget {
                     textAlign: TextAlign.justify,
                   ),
                   Text(
-                    "I code in Dart． I Flutter．",
+                    "I code in Dart.I Flutter.",
                     style: TextStyle(fontSize: 14),
                   ),
                   Text(
